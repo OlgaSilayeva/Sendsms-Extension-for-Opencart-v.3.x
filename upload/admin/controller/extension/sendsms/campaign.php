@@ -294,7 +294,7 @@ class ControllerExtensionSendSMSCampaign extends Controller
                                 $this->request->post['module_sendsms_message'],
                                 $phone,
                                 $from
-                            ), ',', '"', "\0");
+                            ));
                         }
                         $data = 'data=' . file_get_contents($fileUrl);
                         $name = 'OpenCart - ' . HTTP_SERVER . " - " . uniqid();
